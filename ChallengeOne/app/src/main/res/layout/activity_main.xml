@@ -117,16 +117,24 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_height="wrap_content">
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/genderSection">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/genderLabel"
+                            />
                         <RadioGroup
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/genderLabel"
+                            android:id="@+id/genderRadio"
                             android:orientation="horizontal"
                             >
                             <RadioButton
@@ -139,25 +147,66 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
-                                android:checked="true"
                                 android:text="Female"/>
 
-                            <RadioButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:checked="true"
-                                android:text="Prefer not to say"/>
 
                             <RadioButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
-                                android:checked="true"
-                                android:text="Unknown"/>
+                                android:text="Other"/>
 
                         </RadioGroup>
-                    </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/genderRadio"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="District"
+                                    android:layout_marginTop="10dp"/>
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/districtarray"
+                                    android:layout_marginTop="10dp"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Country"
+                                    android:id="@+id/countryLabel"
+                                    android:layout_marginTop="10dp"/>
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/countryarray"
+                                    android:layout_marginTop="10dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -188,7 +237,7 @@
                         android:layout_below="@+id/agreeTerms"
                         android:layout_marginTop="10dp"
                         android:id="@+id/register"
-                        android:text="Eegister"
+                        android:text="Register"
                         />
 
                 </RelativeLayout>
