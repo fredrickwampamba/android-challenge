@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">ChallengeOne</string>
+    <string-array name="countryarray">
+        <item>Choose</item>
+        <item>Uganda</item>
+        <item>Kenya</item>
+        <item>Tanzania</item>
+        <item>Rwanda</item>
+        <item>South Africa</item>
+        <item>Burundi</item>
+        <item>Congo</item>
+        <item>Nigeria</item>
+        <item>South Sudan</item>
+    </string-array>
+
+    <string-array name="districtarray">
+        <item>Choose</item>
+        <item>Kampala</item>
+        <item>Wakiso</item>
+        <item>Masaka</item>
+        <item>Bujumbura</item>
+        <item>Central Region</item>
+        <item>Western Region</item>
+        <item>Northern Region</item>
+        <item>Southern Region</item>
+        <item>Eastern Region</item>
+    </string-array>
 </resources>
